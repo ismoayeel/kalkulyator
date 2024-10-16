@@ -111,6 +111,10 @@ class calculator(QWidget):
     def tozalash(self):
         self.hisoblash.setText("0")
         self.hisoblash.adjustSize()
+        self.hisoblash2.setText("0")
+        self.hisoblash2.adjustSize()
+        self.amal_lbl.setText("")
+        self.amal_lbl.adjustSize()
 
     def tenglik(self):
         if self.amal_lbl.text()=="+":
@@ -223,8 +227,6 @@ class calculator(QWidget):
         else:
             self.hisoblash.setText(f"{float(self.hisoblash.text())*10+0}")
             self.hisoblash.adjustSize()
-
-
 
 app=QApplication([])
 win=calculator()
